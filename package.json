@@ -1,0 +1,15 @@
+{
+  "name": "splitcart",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Neighbors in a shared building combine grocery orders and split delivery fees fairly.",
+  "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.3"
+  }
+}
