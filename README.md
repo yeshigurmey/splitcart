@@ -18,7 +18,7 @@ A delivery fee is a flat cost per drop-off. When several households in one build
 
 Work in progress, built in small pieces.
 
-- [ ] Fee-splitting logic (integer cents, no lost or invented pennies)
+- [x] Fee-splitting logic (integer cents, no lost or invented pennies)
 - [ ] Order model and state machine
 - [ ] API and persistence
 - [ ] Web UI
