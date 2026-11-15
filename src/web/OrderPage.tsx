@@ -130,7 +130,11 @@ function FeeHero({ order }: { order: OrderView }) {
     const others = order.payingCount - 1;
     detail =
       others === 0 ? (
-        <>You are the only one ordering so far. Every neighbour who adds an item cuts this.</>
+        live ? (
+          <>You are the only one ordering so far. Every neighbour who adds an item cuts this.</>
+        ) : (
+          <>Nobody else added items, so the whole fee is yours.</>
+        )
       ) : (
         <>
           Split with {plural(others, "neighbour")}.
@@ -432,7 +436,7 @@ function AddItemForm({
   }
 
   return (
-    <form className="card add-item" onSubmit={submit}>
+    <form className="card add-item" onSubmit={submit} onInput={() => setProblem(null)}>
       <h3>Add an item</h3>
       <div className="add-item-row">
         <label className="grow">
