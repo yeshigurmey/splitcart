@@ -34,7 +34,7 @@ Unlocking releases every hold. Cancelling releases holds and refunds anything al
 
 ## Run it
 
-Needs Node 20 or newer.
+Needs Node 22 or newer.
 
 ```bash
 npm install
